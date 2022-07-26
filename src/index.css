@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex{
+    display: flex
 }
+
+.items-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center
+}
+
+.chat-slogan{
+    color: red;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid violet;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+}
+
+/* estilos del chat */
+
+.chat-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.chat{
+    width: 100%;
+    height: calc(100vh - 5rem);
+    padding: 15px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.user-chat{
+    color: aliceblue;
+    background-color: blue;
+    border-radius: 1rem;
+    min-height: 2rem;
+    width: calc (100% - 5rem);
+    margin: 8px  0 0 24px;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.sender-chat {
+    color: blue;
+    background-color: lightgray;
+    border-radius: 1rem;
+    min-height: 2rem;
+    width: calc (100% - 5rem);
+    margin: 8px 24px 0 0 ;
+    padding: 5px;
+    text-align: left;
+    border: 1px solid blue;
+    font-size: 20px;
+}
+
+.chat-info{
+    font-size: 15px;
+}
+
+.chat-form-container{
+    width: 100%;
+    margin: 5px;
+    height: 3rem;
+}
+
+.chat-input-container{
+display: flex;
+align-items: center;
+
+}
+
+.chat-input{
+    width: 80%;
+    margin: 0 5px 0 0;
+}
+
+.chat-send{
+    width: 18%;
+}
+
+.sign-out{
+    color: red;
+    cursor: pointer;
+}
+
+/* alert message */
+
+.alert-error{
+    color: red;
+}
+
